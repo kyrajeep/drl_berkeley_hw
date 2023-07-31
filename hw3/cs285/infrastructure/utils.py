@@ -129,6 +129,7 @@ def add_noise(data_inp, noiseToSignal=0.01):
     #make it 0.001 to avoid 0 issues later for dividing by std
     mean_data[mean_data == 0] = 0.000001
 
+
     #width of normal distribution to sample noise from
     #larger magnitude number = could have larger magnitude noise
     std_of_noise = mean_data * noiseToSignal
